@@ -30,6 +30,7 @@ public slots:
 private:
     QTcpSocket *socket;
     QTimer *TimerEnvoi;
+    quint16 static Crc16(QByteArray *adresse, int taille);//unsigned char *adresse, unsigned char taille);
 };
 
 #endif // MYROBOT_H
